@@ -8,6 +8,15 @@ const Wrapper = styled(Flex)`
   padding: 32px;
 `
 
+const LocationImg = styled.img`
+  margin-top: 20px;
+`
+
+const CustomText = styled(Heading)`
+  font-size: 20px;
+  letter-spacing: 0.5px;
+`
+
 class Location extends Component {
   constructor(props) {
     super(props)
@@ -58,12 +67,13 @@ class Location extends Component {
     }
     return (
       <Wrapper column align="center">
-        <Text my={2} center>Are you at</Text>
+        <Text my={2} center>Are you stuck at</Text>
+        <LocationImg src={ require('./images/location.png') } />
         {!this.state.station && <Heading my={3} center>...</Heading>}
-        {this.state.station && <Heading my={3} center>{this.state.station}</Heading>}
+        {this.state.station && <CustomText my={3} center>{this.state.station}</CustomText>}
         <Flex justify="center">
-          <Button mx={2} onClick={this.handleYesClick}>Yes! How do you know though</Button>
-          <Button mx={2} onClick={this.handleNoClick}>Nope! Guess again</Button>
+          <Button mx={2} onClick={this.handleYesClick}>Yes!</Button>
+          <Button mx={2} onClick={this.handleNoClick}>Nope!</Button>
         </Flex>
       </Wrapper>
     )

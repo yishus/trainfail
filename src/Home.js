@@ -6,15 +6,25 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { setUsername } from './actions'
 
+import bgImage from './images/trainfail-bg.jpg';
+
 const StyledFlex = styled(Flex)`
   padding: 32px;
+  height: 100vh;
+  line-height: 1.5;
+  background-image: url(${bgImage});
+`
+
+const LogoImg = styled.img`
+  margin-bottom: 20px;
 `
 
 const CustomInput = styled(Input)`
-  border: solid 2px #333;
+  border: solid 1px #333;
   margin: 24px auto;
   max-width: 300px;
   display: block;
+  background: rgba(255,255,255,.5);
 `
 
 class Home extends Component {
@@ -40,8 +50,10 @@ class Home extends Component {
     }
     return (
       <StyledFlex align='center' column>
+        <LogoImg src={ require('./images/logo.png') } />
         <Heading center>#Trainfail</Heading>
-        <Text center>Wah piang, train breakdown again?</Text>
+        <Text center>Alamak, train breakdown again??</Text>
+        <Text center>Login to complain!</Text>
         <CustomInput onChange={this.handleChange} placeholder='How do we call you?' value={this.state.name} />
         <Button center onClick={this.handleClick}>Let Me Out</Button>
       </StyledFlex>

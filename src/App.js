@@ -5,6 +5,8 @@ import Home from './Home'
 import Chat from './Chat'
 import Location from './Location'
 import Profile from './Profile'
+import './css/normalize.css';
+import './css/style.css';
 
 class App extends Component {
   render() {
