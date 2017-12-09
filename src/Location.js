@@ -54,7 +54,7 @@ class Location extends Component {
 
   render() {
     if (this.state.goToChat) {
-      return (<Redirect to={{pathname: '/chat'}} />)
+      return (<Redirect to={{pathname: '/report'}} />)
     }
     return (
       <Wrapper column align="center">
