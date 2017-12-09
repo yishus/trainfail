@@ -5,12 +5,8 @@ import { Redirect } from 'react-router-dom'
 
 import { connect } from 'react-redux'
 import { setUsername } from './actions'
-
-<<<<<<< HEAD
-import bgImage from './images/trainfail-bg.jpg';
-=======
 import Status from './Status'
->>>>>>> 12902d6b8b5bfa074087d764c5f88dc5176c556e
+import bgImage from './images/trainfail-bg.jpg';
 
 const StyledFlex = styled(Flex)`
   padding: 32px;
