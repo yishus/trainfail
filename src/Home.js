@@ -6,6 +6,8 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { setUsername } from './actions'
 
+import Report from './Report'
+
 const StyledFlex = styled(Flex)`
   padding: 32px;
 `
@@ -40,6 +42,7 @@ class Home extends Component {
     }
     return (
       <StyledFlex align='center' column>
+        <Report />
         <Heading center>#Trainfail</Heading>
         <Text center>Wah piang, train breakdown again?</Text>
         <CustomInput onChange={this.handleChange} placeholder='How do we call you?' value={this.state.name} />
