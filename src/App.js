@@ -5,6 +5,7 @@ import Home from './Home'
 import Chat from './Chat'
 import Location from './Location'
 import Profile from './Profile'
+import Report from './Report'
 import './css/normalize.css';
 import './css/style.css';
 
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/chat" component={Chat}/>
             <Route exact path="/location" component={Location}/>
             <Route exact path="/profile" component={Profile}/>
+            <Route exact path="/report" component={Report}/>
           </div>
         </BrowserRouter>
       </Provider>

@@ -10,7 +10,6 @@
     "react-router-dom": "^4.2.2",
     "rebass": "^1.0.4",
     "redux": "^3.7.2",
-    "sendbird": "^3.0.48",
     "styled-components": "^2.2.4"
   },
   "devDependencies": {

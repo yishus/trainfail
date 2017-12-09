@@ -6,7 +6,11 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { setUsername } from './actions'
 
+<<<<<<< HEAD
 import bgImage from './images/trainfail-bg.jpg';
+=======
+import Status from './Status'
+>>>>>>> 12902d6b8b5bfa074087d764c5f88dc5176c556e
 
 const StyledFlex = styled(Flex)`
   padding: 32px;
@@ -50,6 +54,7 @@ class Home extends Component {
     }
     return (
       <StyledFlex align='center' column>
+        <Status />
         <LogoImg src={ require('./images/logo.png') } />
         <Heading center>#Trainfail</Heading>
         <Text center>Alamak, train breakdown again??</Text>
